@@ -4,4 +4,4 @@ app = FastAPI()
 
 @app.get("/")
 async def root():
-    return {"message": "Hello World"}
+    return [{"plan": "basico", "price": 0}, {"plan": "intermedio", "price": 19}, {"plan": "premium", "price": 39}]
