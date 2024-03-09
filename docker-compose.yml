@@ -3,6 +3,8 @@ version: '3.9'
 services:
   sub:
     build: .
+    environment:
+      PRODUCTION: false
     volumes:
       - .:/usr/app
     ports:
